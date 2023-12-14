@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #6F3DF4;
+    --white-color: #FFFFFF;
+    --black-color: #191641;
+    --gray-color: #f1efef;
+    --gray-text: #999999;
+    --yellow-color: #F2C355;
+}
+select , input[type="radio"] , input[type="checkbox"]{
+    cursor: pointer;
+}
+.form-control:focus , 
+.form-select:focus , 
+.form-check:focus{
+    border-color: var(--main-color);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                        0 0 10px rgba(111, 61, 244, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(111, 61, 244, 0.6);
+}
+.alert-danger{
+    padding: 0.65em 1rem;
+}
+.home-view-section-all .container-fluid .row{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: 0.25rem;
+}
+header h4{
+    text-transform: capitalize;
+    letter-spacing: 1.02px;
+    color: var(--black);
+    position: relative;
+    top: 4px;
+}
+header button{
+   text-transform: capitalize;
+   margin-left: 20px;
+}
+header button i{
+   padding-top: 8px;
+   padding-right: 3px;
+}
+
+/**********************
+    Modal Styles
+**********************/
+
+/* modal-backdrop */
+.modal-main{
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(30,30,30,0.5);
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.modal-main .modal-box{
+    position: relative;
+    background: white;
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.5rem;
+    user-select: none;
+}
+
+.modal-main .modal-box .box-header , 
+.modal-main .modal-box .box-body ,
+.modal-main .modal-box .box-footer{
+    padding: 20px 12px;
+}
+
+.modal-main .modal-box .box-header{
+    position: relative;
+    height: fit-content;
+    padding: 30px 12px;
+}
+.modal-main .modal-box .box-header h5{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    margin-top: 1px;
+    letter-spacing: 1.02px;
+    word-spacing: 1.02px;
+    text-transform: capitalize;
+}
+.modal-main .modal-box .box-header .btn-close{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    cursor: pointer;
+    color: var(--gray-text);
+    opacity: 0.4;
+    transition: 0.3s all ease-in-out;
+}
+.modal-main .modal-box .box-header .btn-close:hover{
+    opacity: 1;
+}
+
+.modal-main .modal-box .box-body{
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.modal-main .modal-box .box-footer{
+    position: relative;
+    height: fit-content;
+    padding: 15px 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.modal-main .modal-box .box-footer button{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.modal-main .modal-box .box-footer button:first-child{
+    margin-right: 20px;
+}
+
+/***************************
+    Alert Success Styles
+    Alert Danger Styles
+***************************/
+#alert-success , 
+#alert-danger{
+    width: fit-content;
+    padding: 0px 25px 0px 35px;
+    border-radius: 0.5rem 0px 0px 0.5rem;
+    display: flex;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    opacity: 0.9;
+    z-index: 99999;
+}
+#alert-success{
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    border-left: 9px solid #0f5132;
+}
+#alert-danger{
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    border-left: 9px solid #842029;
+}
+#alert-success i , 
+#alert-danger i{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+    padding: 6px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#alert-success i{
+    background: #0f5132;
+}
+#alert-danger i{
+    background-color: #842029;
+    width: 30px;
+    height: 30px;
+
+}
+#alert-success p , 
+#alert-danger p{
+    margin-top: 16px;
+    margin-left: 35px;
+    font-size: 1.2rem;
+    letter-spacing: 2.04px;
+    font-weight: 500;
+    font-style: italic;
+}

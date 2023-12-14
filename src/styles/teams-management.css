@@ -1,0 +1,151 @@
+#teams-management .container-fluid{
+    height: auto;
+    margin-top: 20px;
+}
+#teams-management .container-fluid .row{
+    margin: auto;
+    margin-left: 8px;
+}
+#teams-management .team-box{
+    height: auto;
+    width: 340px;
+    margin: 25px 15px;
+    border: 1px solid var(--gray-color);
+    position: relative;
+    padding-left: 15px;
+    border-radius: 10px;
+    background: white;
+}
+#teams-management .team-box .avater-scrum-master{
+    position:absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid var(--gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -10px;
+    right: -10px;
+}
+#teams-management .team-box .avater-scrum-master img{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+#teams-management .team-box .dropdown{
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    outline: none;
+    border: none;
+}
+#teams-management .team-box .dropdown ul{
+    position: relative;
+}
+#teams-management .team-box .dropdown button{
+    border: none;
+    outline: none;
+    font-size: 24px;
+}
+#teams-management .team-box .dropdown button:focus{
+    outline: none;
+    border: none;
+}
+#teams-management .team-box h5{
+   margin-top: 40px;
+}
+#teams-management .team-box .team-status{
+    color: white;
+    padding: 3px 10px;
+    border-radius: 10px;
+    opacity: 0.8;
+    position: relative;
+    top: 5px;
+    font-weight: bold;
+}
+#teams-management .team-box .status-working{
+    background: #198754;
+}
+#teams-management .team-box .status-not-working{
+    background: #dc3545;
+}
+#teams-management .team-box p{
+    width: 94%;
+    color: var(--black-color);
+    margin-top: 15px;
+}
+#teams-management .team-box .rank{
+    display: flex;
+    margin-top: 17px;
+    width: 100%;
+    border-bottom: 1px solid var(--gray-color);
+    padding-bottom: 6px;
+}
+#teams-management .team-box .rank span{
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: -8px;
+}
+#teams-management .team-box .rank .stars{
+    margin-left: 10px;
+}
+#teams-management .team-box .rank .stars i{
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 3px;
+
+}
+#teams-management .team-box .team-members-avater{
+    width: 100%;
+    border-bottom: 1px solid var(--gray-color);
+}
+#teams-management .team-box .team-members-avater .content-avaters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 16px;
+}
+#teams-management .team-box .team-members-avater .content-avaters ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    margin-right: 10px;
+}
+#teams-management .team-box .team-members-avater .content-avaters ul li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: -8px;
+    padding: 0px;
+}
+#teams-management .team-box .team-members-avater .content-avaters ul li img{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+#teams-management .team-box .team-members-avater .content-avaters ul li:last-child{
+    width: 36px;
+    height: 36px;
+    background: var(--main-color);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#teams-management .team-box .velocity{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

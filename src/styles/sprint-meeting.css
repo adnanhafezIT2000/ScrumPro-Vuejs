@@ -1,0 +1,22 @@
+#sprint-meeting .container{
+    width: 80%;
+}
+#sprint-meeting .container table{
+    text-align: center;
+    margin-top: 50px;
+}
+#sprint-meeting .container table thead{
+    background: white;
+    border-bottom: 3px solid var(--main-color);
+}
+#sprint-meeting .container .no-found-meetings{
+    margin-top: 40px;
+    color: var(--gray-text);
+}
+#sprint-meeting input:focus , 
+#sprint-meeting select:focus{
+    border-color: var(--main-color);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                        0 0 10px rgba(111, 61, 244, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(111, 61, 244, 0.6);
+}

@@ -1,0 +1,155 @@
+/* Links About , Change password Active */
+#profile .router-link-exact-active{
+    border-bottom: 4px solid var(--main-color);
+}
+
+
+#profile .container-fluid{
+   height: auto;
+}
+#profile .container-fluid .row{
+    height: auto;
+}
+#profile .container-fluid .row .avater , 
+#profile .container-fluid .row .info{
+    height: 270px;
+}
+#profile .container-fluid .row .avater{
+    position: relative;
+}
+#profile .container-fluid .row .avater img{
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+}
+#profile .container-fluid .row .avater .input-file{
+    position: absolute;
+    right: -27px;
+    top: -14px;
+    background: var(--main-color);
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    transition: 0.3 all ease-in-out;
+}
+#profile .container-fluid .row .avater .input-file div:hover{
+    opacity: 1;
+}
+#profile .container-fluid .row .avater .input-file i:hover{
+    cursor: pointer;
+}
+#profile .container-fluid .row .user-info{
+    padding: 0px 50px;
+    position: relative;
+    cursor: auto;
+    border-bottom: 1px solid rgba(189, 189, 189 , 0.5);
+}
+#profile .name-address-role-category{
+    position: absolute;
+    top: 0px;
+}
+#profile .name-address-role-category .name-address , 
+#profile .name-address-role-category .role-category{
+    display: flex;
+}
+#profile .name-address-role-category .name-address h2{
+    margin-right: 20px;
+    letter-spacing: 1.02px;
+    color: var(--black-color);
+
+}
+#profile .name-address-role-category .name-address .address{
+    margin-top: 13px;
+    color: var(--gray-text);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#profile .name-address-role-category .role-category{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    letter-spacing: 0.25px;
+}
+#profile .rank{
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}
+#profile .rank h6{
+    color: var(--gray-text);
+}
+#profile .rank .rank-star-number{
+    display: flex;
+    margin-top: -10px;
+}
+#profile .rank .rank-star-number span{
+    font-size: 28px;
+    color: var(--black-color);
+    font-weight: bold;
+    margin-right: 17px;
+}
+#profile .rank .rank-star-number .starts{
+    font-size: 24px;
+    color: var(--main-color);   
+    margin-top: 2px;
+}
+#profile .rank .rank-star-number .starts i{
+    margin-right: 4px;
+}
+
+#profile .links{
+    position: absolute;
+    bottom: -10px;
+    left: 16px;
+}
+#profile .links ul{
+    list-style-type: none;
+    display: flex;
+}
+#profile .links ul li{
+    margin-right: 30px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+#profile .links ul li a{
+    padding: 6px 0px;
+    text-decoration: none;
+    color: var(--black-color);
+    cursor: pointer;
+}
+#profile .links ul li a i{
+    margin-right: 2px;
+    margin-top: 2px;
+}
+#profile .links ul li a:hover{
+    border-bottom: 4px solid var(--main-color);
+}
+#profile .skills{
+    height: auto;
+    padding-top: 30px;
+}
+#profile .skills .skills-info h5{
+    color: var(--gray-text);
+    text-transform: uppercase;
+    letter-spacing: 1.02px;
+    margin-left: -10px;
+}
+#profile .skills .skills-info ul{
+    list-style: none;
+    font-size: 16px;
+    color: var(--black-color);
+    text-transform: uppercase;
+}
+#profile .skills .skills-info ul li{
+    padding-bottom: 6px;
+    font-style: italic;
+}

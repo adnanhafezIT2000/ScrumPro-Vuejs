@@ -1,0 +1,59 @@
+#categories-management .container{
+    height: auto;
+    margin-top: 40px;
+}
+#categories-management input:focus , 
+#categories-management select:focus{
+    border-color: var(--main-color);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                        0 0 10px rgba(111, 61, 244, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(111, 61, 244, 0.6);
+}
+#categories-management .container .row{
+    margin: auto;
+}
+#categories-management .categories{
+    min-height: calc(100vh - 260px);
+    border-right: 2px solid var(--gray-text);
+}
+#categories-management .skills{
+    min-height: calc(100vh - 260px);
+    padding-left: 45px;
+}
+#categories-management .categories .category-box{
+    position: relative;
+    border: 1px solid var(--gray-color);
+    background: white;
+    padding: 15px;
+    margin-bottom: 26px;
+    display: flex;
+}
+#categories-management .categories .category-box .user-count-caetgory{
+    width: 40px;
+    height: 40px;
+    background: var(--main-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 17px;
+    margin-right: 15px;
+}
+#categories-management .categories .category-box h5{
+    margin-top: 5px;
+}
+#categories-management .categories .category-box ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#categories-management .categories .category-box ul li{
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}

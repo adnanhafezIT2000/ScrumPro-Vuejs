@@ -1,0 +1,270 @@
+#backlog .btn-refresh{
+    background: #F2C355;
+    border: none;
+    outline: none;
+}
+#backlog .btn-refresh i{
+    font-size: 20px; 
+    color:white;
+}
+#backlog input:focus , 
+#backlog select:focus{
+    border-color: var(--main-color);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                        0 0 10px rgba(111, 61, 244, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(111, 61, 244, 0.6);
+}
+
+#backlog .filter{
+    width: 100%;
+    margin-top: 35px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#backlog .filter-icon i{
+    font-size: 36px;
+    color: var(--main-color);
+}
+#backlog .filter input{
+    width: 350px;
+    padding-left: 40px;
+    color: var(--black-color);
+}
+#backlog .filter select{
+   width: 200px;
+}
+#backlog .filter .input-search{
+    position: relative;
+}
+#backlog .filter .input-search i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    font-size: 17px;
+    color: var(--gray-text);
+    font-weight: bolder;
+}
+#backlog .filter input[type="number"]:first-child{
+    margin-left: -30px;
+}
+#backlog .filter input[type="number"]:last-child{
+    margin-right: 30px;
+}
+
+#backlog .search-point{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 310px;
+    position: relative;
+    left: 15px;
+}
+#backlog .search-point span{
+    font-size: 16px;
+    color: var(--black-color);
+}
+#backlog .search-point input{
+    width: 100px;
+    padding-left: 8px;
+}
+
+#backlog header{
+    position: relative;
+}
+#backlog header span{
+    color: var(--main-color);
+}
+#backlog header .story-status{
+    display: flex;
+    position: absolute;
+    right: 240px;
+    top: 52%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#backlog header .story-status-no-create{
+    right: 80px;
+}
+#backlog header .story-status div{
+    color: white;
+    width: fit-content;
+    height: 40px;
+    padding: 6px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+#backlog .content{
+    width: 94%;
+    border: none;
+}
+#backlog .content .conatiner{
+    margin: auto;
+    margin-top: 15px;
+    min-height: auto;
+    padding: 15px;
+    position: relative;
+}
+#backlog .content .conatiner .row .backlog-empty{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--gray-text);
+    letter-spacing: 2.04px;
+    text-transform: capitalize;
+    user-select: none;
+    font-weight: 600;
+    margin-top: 45px;
+}
+#backlog header h4 span{
+    text-transform: lowercase;
+}
+#backlog .content .conatiner .row .backlog-empty h3{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+}
+#backlog .content .conatiner .row .story-box{
+    position: relative;
+    height: 50px;
+    background: white;
+    padding: 0px 15px;
+    margin-bottom: 10px;
+}
+#backlog .content .conatiner .row .story-box .story-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#backlog .content .conatiner .row .story-box .story-icon i{
+    color: white;
+    padding: 6px;
+    font-size: 15px;
+    border-radius: 0.25rem;
+}
+#backlog .content .conatiner .row .story-box .story-title p{
+    width: 72%;
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+#backlog .content .conatiner .row .story-box .story-manage{
+    width: 21.5%;
+    height: 50px;
+    margin-left: 831px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#backlog .content .conatiner .row .story-box .story-manage .story-point form{
+    position: relative;
+    top: 12px;
+}
+#backlog .content .conatiner .row .story-box .story-manage .story-point form input{
+    width: 63px;
+    border-radius: 0px;
+    border: 1px solid var(--gray-text);
+    outline: none;
+    padding-left: 6px;
+}
+#backlog .content .conatiner .row .story-box .story-manage .story-point form input:focus{
+    border-color: var(--main-color);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                        0 0 10px rgba(111, 61, 244, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(111, 61, 244, 0.6);
+}
+#backlog .content .conatiner .row .story-box .story-manage .story-point form .buttons , 
+#backlog .content .conatiner .row .story-box .story-manage .story-priority form .buttons{
+    display: flex;
+}
+#backlog .content .conatiner .row .story-box .story-manage .story-point form button , 
+#backlog .content .conatiner .row .story-box .story-manage .story-priority form button{
+    padding: 0px 6px;
+    color: var(--gray-text);
+    cursor: pointer;
+    background: var(--gray-color);
+    border: none;
+    outline: none;
+    transition: 0.2s all ease-in-out;
+    opacity: 0.8;
+    z-index: 999;
+    margin-top: 3px;
+}
+#backlog .content .conatiner .row .story-box .story-manage .story-point form button:first-child{
+    margin-right: 10px;
+}
+#backlog .content .conatiner .row .story-box .story-manage .story-point form button:first-child:hover{
+    opacity: 0.8;
+    color: white;
+    background: rgb(255, 50, 50);
+}
+#backlog .content .conatiner .row .story-box .story-manage .story-point form button:last-child:hover{
+    opacity: 0.8;
+    color: white;
+    background: #28a745;
+}
+#backlog .content .conatiner .row .story-box .story-manage .story-point{
+    width: 32px;
+    height: 32px;
+    color: var(--black-color);
+    background-color: var(--gray-color);
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+#backlog .content .conatiner .row .story-box .story-manage .story-status{
+    padding: 3px 8px;
+    text-align: center;
+    border-radius: 0.15em;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+#backlog .content .conatiner .row .story-box .todo{
+    background: var(--gray-color);
+    color: #42526E;
+}
+#backlog .content .conatiner .row .story-box .progress{
+    background: #c9ddfa;
+    color: #0747A6;
+    padding: 10px 8px;
+    height: 30px;
+}
+#backlog .content .conatiner .row .story-box .done{
+    background: #E3FCEF; 
+    color: #006644;
+}
+#backlog .content .conatiner .row .story-box .not-complete{
+    background: #ef5e5e;
+    color: #f1e1e1;
+}
+#backlog .content .conatiner .row .story-box .btn-group button{
+    border: none;
+    outline: none;
+    color: var(--black-color);
+    background: #e9ecef;
+    padding: 2px 12px;
+    border-radius: 0.25em;
+    font-size: 22px;
+    transition: 0.2s all ease-in-out;
+}
+#backlog .content .conatiner .row .story-box .btn-group button:hover{
+    background: #ced4da;
+}
+#backlog .content .conatiner .row .story-box .btn-group li{
+    cursor: pointer;
+}

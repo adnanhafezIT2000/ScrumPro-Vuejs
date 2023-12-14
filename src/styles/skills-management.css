@@ -1,0 +1,71 @@
+#skills-management{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+}
+#skills-management input:focus , 
+#skills-management select:focus{
+    border-color: var(--main-color);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                        0 0 10px rgba(111, 61, 244, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(111, 61, 244, 0.6);
+}
+#skills-management .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    background: none;
+    margin-bottom: 40px;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+}
+#skills-management .header button{
+    text-transform: capitalize;
+}
+#skills-management h3{
+    text-transform: capitalize;
+    position: relative;
+    top: 4px;
+    letter-spacing: 2.04px;
+    color: var(--black-color);
+    text-decoration: underline;
+}
+#skills-management .skill-box{
+    position: relative;
+    border: 1px solid var(--gray-color);
+    background: white;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+#skills-management .skill-box .user-count-caetgory{
+    width: 40px;
+    height: 40px;
+    background: var(--main-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 17px;
+    margin-right: 15px;
+}
+#skills-management .skill-box h5{
+    margin-top: 8px;
+}
+#skills-management .skill-box ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#skills-management .skill-box ul li{
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}

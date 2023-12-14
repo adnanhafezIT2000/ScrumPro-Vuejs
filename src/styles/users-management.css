@@ -1,0 +1,147 @@
+#users-management{
+    padding-bottom: 50px;
+}
+#users-management input:focus , 
+#users-management select:focus{
+    border-color: var(--main-color);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                        0 0 10px rgba(111, 61, 244, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(111, 61, 244, 0.6);
+}
+
+#users-management .filter{
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#users-management .filter-icon i{
+    font-size: 36px;
+    color: var(--main-color);
+}
+#users-management .filter input{
+    width: 270px;
+    padding-left: 40px;
+    color: var(--black-color);
+}
+#users-management .filter select{
+   width: 190px;
+}
+#users-management .filter .input-search{
+    position: relative;
+    display: flex;
+}
+#users-management .filter .input-search #input-icon-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    font-size: 17px;
+    color: var(--gray-text);
+    font-weight: bolder;
+}
+#users-management .filter .input-search button{
+    margin-left: 15px;
+    background: var(--main-color);
+    color: white;
+    font-size: 16px;
+}
+
+#users-management table {
+    width: 97%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid var(--gray-color);
+}
+#users-management table thead{
+   border-bottom: 3px solid var(--main-color);
+}
+#users-management table thead tr th{
+    font-size: 18px;
+    letter-spacing: 1.02px;
+    padding: 15px 0px 15px 15px;
+}
+#users-management table tbody tr td{
+    padding-top: 8px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+#users-management table tbody tr td:nth-child(2) , 
+#users-management table tbody tr td:nth-child(3) , 
+#users-management table tbody tr td:nth-child(4) , 
+#users-management table tbody tr td:nth-child(5) , 
+#users-management table tbody tr td:nth-child(6){
+    padding-top: 22.5px;
+}
+#users-management table tbody tr td:nth-child(3) , 
+#users-management table tbody tr td:nth-child(4){
+    text-transform: capitalize;
+}
+#users-management .img-user{
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+#users-management table tbody tr td ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 22px;
+    position: relative;
+    right: 48px;
+    cursor: pointer;
+}
+#users-management table tbody tr td ul .fa-trash{
+    position: relative;
+    top: -1.5px;
+}
+.status{
+    display: flex;
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+}
+.status span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.status p{
+    position: relative;
+    top: -7px;
+    font-size: 16px;
+}
+
+#paginition-nav{
+    background: none;
+    position: relative;
+    left: 20px;
+    user-select: none;
+}
+#paginition-nav li a{
+    background-color: none;
+    box-shadow: none;
+    border-color: none;
+    outline: none;
+    cursor: pointer;
+}
+#paginition-nav .disabled{
+    cursor:no-drop;
+}
+
+#users-management .fa-trash{
+    margin-top: 2.5px;
+}
+
+.create-user-rank {
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    color: var(--main-color);
+}

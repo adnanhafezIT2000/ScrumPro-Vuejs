@@ -1,0 +1,351 @@
+#gold-rank{
+    color: #ffd700;
+}
+#silver-rank{
+    color: #808080;
+}
+#bronze-rank{
+    color: #b08d57;
+}
+#dashboard .no-story-progress{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: var(--gray-text);
+    font-weight: bolder;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+#dashboard .container{
+    height: fit-content;
+    padding: 20px 0px;
+    position: relative;
+    top: 10px;
+}
+#dashboard .container .row .box{
+    height: 135px;
+    position: relative;
+    margin-bottom: 15px;
+}
+#dashboard .container .row .box .box-content{
+    height: 135px;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(10, 10, 10, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#dashboard .container .row .box .box-content h6{
+    text-transform: capitalize;
+    letter-spacing: 1.02px;
+    font-size: 22px;
+    font-style: italic;
+}   
+#dashboard .container .row .box .box-content span{
+    font-size: 35px;
+    color: var(--main-color);
+    font-weight: bolder;
+    position: relative;
+    bottom: 5px;
+}
+#dashboard .container .row .box .box-content b{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: capitalize;
+}
+#dashboard .container .row .box .box-content #date{
+    font-size: 28px;
+    margin-top: 7px;
+    padding-bottom: 3px;
+}
+#dashboard .container .row .box .box-content a{
+    width: 112.5%;
+    text-align: center;
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+    border-radius: 0px 0px 8px 8px;
+    padding: 6px 0px;
+    text-decoration: none;
+    color: white;
+    background-color: #bba6f5;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    transition: 0.5s;
+}
+#dashboard .container .row .box .box-content a i{
+    position: relative;
+    top: 1px;
+}
+#dashboard .container .row .box .box-content a:hover{
+    background-color: var(--main-color);
+}
+#dashboard .container .row .top-three , 
+#dashboard .container .row .team-info , 
+#dashboard .container .row .story-progress-info{
+    margin-top: 35px;
+    height: fit-content;
+    padding: 10px;
+    cursor: auto;
+}
+#dashboard .container .row .top-three .top-three-content , 
+#dashboard .container .row .team-info .team-info-content , 
+#dashboard .container .row .story-progress-info .story-progress-info-content{
+    width: 100%;
+    height: inherit;
+    background-color: white;
+    padding: 20px 15px 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(10, 10, 10, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    cursor: auto;
+}
+#dashboard .container .row .top-three .top-three-content h6 , 
+#dashboard .container .row .team-info .team-info-content h6 , 
+#dashboard .container .row .story-progress-info .story-progress-info-content h6{
+    font-size: 23px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1.02px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: var(--black-color);
+}
+#dashboard .container .row .story-progress-info .story-progress-info-content h6 span{
+    color: var(--main-color);
+}
+#dashboard .container .row .top-three .top-three-content .user-info{
+    width: 100%;
+    height: 90px;
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    cursor: auto;
+    border-bottom: 2px solid var(--gray-color);
+}
+#dashboard .container .row .top-three .top-three-content .user-info .fa-trophy{
+    position: absolute;
+    left: 5px;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 40px;
+}
+#dashboard .container .row .top-three .top-three-content .user-info img{
+    position: absolute;
+    left: 65px;
+    top: 40%;
+    transform: translateY(-50%);
+}
+#dashboard .container .row .top-three .top-three-content .user-info p{
+    position: absolute;
+    left: 140px;
+    top: 20%;
+    transform: translateY(-50%);
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1.02px;
+    color: var(--black-color);
+    font-size: 18px;
+}
+#dashboard .container .row .top-three .top-three-content .user-info .rank{
+    position: absolute;
+    left: 140px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+#dashboard .container .row .top-three .top-three-content .user-info .rank span{
+    margin-right: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+#dashboard .container .row .top-three .top-three-content .user-info .rank i{
+    margin-left: 2px;
+    color: var(--yellow-color);
+}
+#dashboard .container .row .team-info .team-info-content .user-info{
+    width: 100%;
+    height: 90px;
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    cursor: auto;
+    border-bottom: 2px solid var(--gray-color);
+}
+#dashboard .container .row .team-info .team-info-content .user-info img{
+    position: absolute;
+    top: 41.5%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+#dashboard .container .row .team-info .team-info-content .user-info p{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--black-color);
+    font-size: 17px;
+    margin-right: 10px;
+}
+#dashboard .container .row .team-info .team-info-content .user-info .ul-name-rank{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    left: 65px;
+    top: 30%;
+    transform: translateY(-50%);
+}
+#dashboard .container .row .team-info .team-info-content .user-info .rank span , 
+#dashboard .container .row .story-progress-info .story-progress-info-content .task-box ul li .rank span{
+    margin-right: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+#dashboard .container .row .team-info .team-info-content .user-info .rank i , 
+#dashboard .container .row .story-progress-info .story-progress-info-content .task-box ul li .rank i{
+    margin-left: 2px;
+    color: var(--yellow-color);
+}
+#dashboard .container .row .team-info .team-info-content .user-info .category{
+    position: absolute;
+    left: 95px;
+    top: 63%;
+    transform: translateY(-50%);
+    background: var(--yellow-color);
+    padding: 4px 10px;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 12px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+#dashboard .container .row .team-info .team-info-content .user-info .user-skills{
+    position: absolute;
+    display: flex;
+    left: 200px;
+    top: 47%;
+}
+#dashboard .container .row .team-info .team-info-content .user-info .user-skills ul{
+    list-style-type: none;
+}
+#dashboard .container .row .team-info .team-info-content .user-info .user-skills ul li{
+    background: #fad681;
+    padding: 2px 10px;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 12px;
+    font-weight: 700;
+    margin: 0px -10px;
+}
+#dashboard .container .row .story-progress-info .story-progress-info-content .story-info-list{
+    border-bottom: 2px solid var(--gray-color);
+    width: 100%;
+    margin-bottom: 12px;
+}
+#dashboard .container .row .story-progress-info .story-progress-info-content .story-info-list ul{
+    list-style: none;
+    position: relative;
+    left: -22px;
+}
+#dashboard .container .row .story-progress-info .story-progress-info-content .story-info-list ul li{
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: var(--black-color);
+}
+#dashboard .container .row .story-progress-info .story-progress-info-content .story-info-list ul li:last-child{
+    background: var(--yellow-color);
+    padding: 4px 10px;
+    color: white;
+    width: fit-content;
+    text-transform: capitalize;
+    border-radius: 12px;
+    font-weight: 700;
+}
+#dashboard .container .row .story-progress-info .story-progress-info-content .task-box{
+    width: 98%;
+    height: fit-content;
+    padding: 10px;
+    border-bottom: 2px solid var(--gray-color);
+    margin-bottom: 12px;
+}
+#dashboard .container .row .story-progress-info .story-progress-info-content .task-box p{
+    font-size: 17px;
+    color: var(--black-color);
+}
+#dashboard .container .row .story-progress-info .story-progress-info-content .task-box p i{
+    font-size: 19px;
+    font-weight: bold;
+    margin-right: 6px;
+}
+#dashboard .container .row .story-progress-info .story-progress-info-content .task-box ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+    left: -32px;
+}
+#dashboard .container .row .story-progress-info .story-progress-info-content .task-box ul li{
+    margin-right: 20px;
+}
+#dashboard .container .row .story-progress-info .story-progress-info-content .task-box ul li .category{
+    background: var(--yellow-color);
+    padding: 4px 10px;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 12px;
+    font-weight: bolder;
+    font-size: 16px;
+    position: relative;
+    top: -5px;
+}
+#dashboard .container .row .story-progress-info .story-progress-info-content .task-box ul li .skill{
+    background: #fad681;
+    padding: 2px 10px;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 12px;
+    font-weight: 700;
+    position: relative;
+    top: -3px;
+}
+#dashboard .container .row .velocity{
+    color: var(--black-color);
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1.02px;
+    font-style: italic;
+}
+#dashboard .container .row .velocity b{
+    color: var(--main-color);
+}
+#dashboard .container .row .manage-task-developer{
+    position: relative;
+}
+#dashboard .container .row .manage-task-developer .task-status .status-progress{
+    background: #c9ddfa;
+    color: #0747A6;
+    padding: 5px 10px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#dashboard .container .row .manage-task-developer .task-status .status-done{
+    background: #E3FCEF; 
+    color: #006644;
+    padding: 5px 10px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#dashboard .container .row .manage-task-developer button{
+    padding: 5px 10px;
+    border-radius: 6px;
+    text-transform: capitalize;
+}

@@ -1,0 +1,80 @@
+#roles-management table{
+    width: 100%;
+    margin: 40px auto;
+    border: 1px solid rgba(194, 194, 194 , 0.5);
+    background: white;
+}
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+} 
+#roles-management table thead{
+    border: 1px solid rgba(194, 194, 194 , 0.5);
+}
+#roles-management table thead tr th , 
+#roles-management table tfoot tr th{
+    font-size: 18px;
+    letter-spacing: 1.02px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+#roles-management table tbody tr{
+    border-bottom: 2px solid rgba(194, 194, 194 , 0.8);
+}
+#roles-management table tbody tr .permission-name{
+    padding: 15px 20px;
+    color: var(--black-color);
+    font-size: 17px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+#roles-management table tbody .type{
+    background: rgba(198, 177, 218 , 0.2);
+    position: relative;
+    height: 52px;
+}
+#roles-management table tbody .type h5{
+   position: absolute;
+   color: var(--black-color);
+   text-transform: capitalize;
+}
+#roles-management table tfoot{
+    border-top: 1px solid rgba(194, 194, 194 , 0.5) ;
+}
+
+#roles-management table i{
+    width: 22px;
+    height: 22px;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 31%;
+    top: 10px;
+}
+#roles-management table .status-check{
+    background-color: #198754;
+} 
+#roles-management table .status-not-check{
+    background-color: #dc3545;
+} 
+#roles-management table .tr-type{
+    width: 100%;
+    background: rgba(198, 177, 218 , 0.2);
+    color: var(--main-color);
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1.02px;
+}
+#roles-management table .tr-type td{
+    padding: 15px 20px;
+}

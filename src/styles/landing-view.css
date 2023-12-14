@@ -1,0 +1,109 @@
+#landing{
+    width: 100%;
+    height: 100vh;
+}
+#landing a{
+    text-decoration: none;
+}
+#landing nav{
+    width: 100%;
+    height: 80px;
+}
+#landing nav .container{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#landing nav .container .logo{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--black-color);
+    position: relative;
+    top: -4px;
+}
+#landing nav .container .logo span{
+    color: var(--main-color);
+}
+#landing nav .container .login-btn a{
+    padding: 12px 40px;
+    border: none;
+    text-decoration: none;
+    background: var(--main-color);
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1.02px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+#landing nav .container .login-btn a:hover{
+    opacity: 1;
+}
+#landing .links-nav{
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 19%;
+}
+#landing .links-nav li{
+    margin: 0px 12px;
+    font-size: 19px;
+    letter-spacing: 1.02px;
+}
+#landing .links-nav li a{
+   color: var(--black-color);
+   transition: 0.3s all ease-in-out;
+}
+#landing .links-nav li a:hover{
+    color: var(--main-color);
+}
+
+#landing .hero-content{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url(../assets/slide-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#landing .hero-content .background{
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    background: rgba(40, 40, 40, 0.3);
+}
+#landing .hero-content .background .paragraph-btn{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 100px;
+}
+#landing .hero-content .background .paragraph-btn h1{
+    color: #fff;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+}
+#landing .hero-content .background .paragraph-btn p{
+    color: #fff;
+    margin-top: 10px;
+    width: 50%;
+    line-height: 28px;
+    font-size: 18px;
+}
+#landing .hero-content .background .paragraph-btn button{
+    margin-top: 10px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    background: var(--main-color);
+    color: white;
+    text-transform: capitalize;
+    font-size: 19px;
+    letter-spacing: 1.02px;
+}

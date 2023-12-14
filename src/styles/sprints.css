@@ -1,0 +1,316 @@
+#sprint .btn-refresh{
+    background: #F2C355;
+    border: none;
+    outline: none;
+}
+#sprint .btn-refresh i{
+    font-size: 20px; 
+    color:white;
+}
+#sprint input:focus , 
+#sprint select:focus{
+    border-color: var(--main-color);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                        0 0 10px rgba(111, 61, 244, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(111, 61, 244, 0.6);
+}
+
+/* sprint container */
+#sprint .container{
+    width: 94%;
+    min-height: 500px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* sprint no-sprint */
+#sprint .container .row .no-sprints{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2.04px;
+    font-size: 45px;
+    color: var(--gray-text);
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* sprint backlog */
+#sprint .container .row .backlog{
+    background: white;
+    border-radius: 1rem;
+}
+
+/* sprint sprint box */
+#sprint .container .row .sprint-box{
+    background: white;
+    border-radius: 1rem;
+    margin-bottom: 40px;
+}
+
+/* sprint backlog accordion + sprint sprint box accordion  */
+#sprint .container .row .backlog .accordion , 
+#sprint .container .row .sprint-box .accordion {
+    width: 102%;
+    margin-left: -1%;
+}
+#sprint .container .row .backlog .accordion .accordion-header button , 
+#sprint .container .row .sprint-box .accordion .accordion-header .accordion-button{
+    border: 3px solid transparent;
+    background: transparent;
+    padding: 12px 20px;
+    color: var(--black-color);
+    font-size: 1.2rem;
+    letter-spacing: 0.003rem;
+    margin: 0px;
+    font-weight: 500;
+}
+#sprint .container .row .backlog .accordion .accordion-header button span , 
+#sprint .container .row .sprint-box .accordion .accordion-header .accordion-button span{
+    color: var(--gray-text);
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+#sprint .container .row .backlog .accordion .accordion-header button:focus , 
+#sprint .container .row .sprint-box .accordion .accordion-header .accordion-button:focus{
+    border-color:#86b7fe;
+    outline: none;
+    box-shadow: none;
+    background: none;
+    color: var(--black-color);
+}
+#sprint .container .row .backlog .accordion .accordion-body , 
+#sprint .container .row .sprint-box .accordion .accordion-body{
+    margin-top: 10px;
+}
+#sprint .container .row .backlog .accordion .story-box , 
+#sprint .container .row .sprint-box .accordion .story-box{
+    position: relative;
+    left: -20px;
+    top: -20px;
+    height: 50px;
+    background: white;
+    padding: 0px 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 55px;
+    width: 103.5%;
+}
+#sprint .container .row .backlog .accordion .story-box .story-icon , 
+#sprint .container .row .sprint-box .accordion .story-box .story-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#sprint .container .row .backlog .accordion .story-box .story-icon i , 
+#sprint .container .row .sprint-box .accordion .story-box .story-icon i{
+    color: white;
+    padding: 6px;
+    font-size: 15px;
+    border-radius: 0.25rem;
+}
+#sprint .container .row .backlog .accordion .story-box .story-title p , 
+#sprint .container .row .sprint-box .accordion .story-box .story-title p{
+    width: 68%;
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+#sprint .container .row .backlog .accordion .story-box .story-manage , 
+#sprint .container .row .sprint-box .accordion .story-box .story-manage{
+    position: absolute;
+    height: 50px;
+    right: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#sprint .container .row .backlog .accordion .story-box .story-manage{
+    width: 14%;
+    justify-content: space-between;
+}
+#sprint .container .row .backlog .accordion .story-box .story-manage .story-point span , 
+#sprint .container .row .sprint-box .accordion .story-box .story-manage .story-point span{
+    color: var(--black-color);
+    background-color: var(--gray-color);
+    user-select: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#sprint .container .row .backlog .accordion .story-box .btn-group button , 
+#sprint .container .row .sprint-box .accordion .story-box .btn-group button{
+    border: none;
+    outline: none;
+    color: var(--black-color);
+    background: #e9ecef;
+    padding: 2px 12px;
+    border-radius: 0.25em;
+    font-size: 22px;
+    transition: 0.2s all ease-in-out;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+#sprint .container .row .backlog .accordion .story-box .btn-group button:hover , 
+#sprint .container .row .sprint-box .accordion .story-box .btn-group button:hover{
+    background: #ced4da;
+}
+#sprint .container .row .backlog .accordion .story-box .btn-group li , 
+#sprint .container .row .sprint-box .accordion .story-box .btn-group li{
+    cursor: pointer;
+}
+
+/* Edit ===> sprint sprint box */
+#sprint .container .row .sprint-box .accordion .accordion-header{
+    display: flex;
+}
+#sprint .container .row .sprint-box .accordion .accordion-header .accordion-button{
+    width: 55%;
+    display: flex;
+}
+#sprint .container .row .sprint-box .accordion .accordion-header .sprint-manage{
+    width: calc(100% - 55%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+#sprint .container .row .sprint-box .accordion .accordion-header .sprint-manage .ul-points{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    left: 32px;
+    top: 1px;
+    user-select: none;
+}
+#sprint .container .row .sprint-box .accordion .accordion-header .sprint-manage .ul-points li{
+    margin-right: 7px;
+    font-size: 16px;
+    font-weight: 500;
+    /*width: 60px;
+    height: 36px;
+    padding: 0px 3px;*/
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sprint .container .row .sprint-box .accordion .accordion-header .sprint-manage .ul-points .point-todo{
+    color: var(--black-color);
+    background: var(--gray-color);
+}
+#sprint .container .row .sprint-box .accordion .accordion-header .sprint-manage .ul-points .point-progress{
+    color: white;
+    background: #0747A6;
+}
+#sprint .container .row .sprint-box .accordion .accordion-header .sprint-manage .ul-points .point-done{
+    color: white;
+    background: #006644;
+}
+#sprint .container .row .sprint-box .accordion .accordion-header .sprint-manage .button-group{
+    margin-right: 10px;
+    display: flex;
+}
+#sprint .container .row .sprint-box .accordion .accordion-header .sprint-manage .button-group .btn-group button{
+    border: none;
+    outline: none;
+    color: var(--black-color);
+    background: #e9ecef;
+    padding: 2px 12px;
+    border-radius: 0.25em;
+    font-size: 22px;
+    transition: 0.2s all ease-in-out;
+    margin-left: 20px;
+}
+#sprint .container .row .sprint-box .accordion .accordion-header .sprint-manage .button-group .btn-group ul li{
+    padding: 6px 12px;
+    cursor: pointer;
+}
+#sprint .container .row .sprint-box .accordion .accordion-header .sprint-manage .button-group #btn-start-complete{
+    padding: 6px 24px;
+    font-size: 18px;
+    letter-spacing: 1.02px;
+    border: none;
+}
+
+#sprint .container .row .sprint-box .accordion .story-box .story-manage{
+    width: 28%;
+}
+#sprint .container .row .sprint-box .accordion .story-box .story-point{
+    position: absolute;
+    left: 0px;
+}
+#sprint .container .row .sprint-box .accordion .story-box .story-status{
+    position: absolute;
+    left: 19%;
+    padding: 3px 8px;
+    text-align: center;
+    border-radius: 0.15em;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+#sprint .container .row .sprint-box .accordion .story-box .rank-story{
+    position: absolute;
+    right: 25%;
+}
+#sprint .container .row .sprint-box .accordion .story-box .btn-group{
+    position: absolute;
+    right: -4px;
+}
+
+.todo{
+    background: var(--gray-color);
+    color: #42526E;
+}
+.gprogress{
+    background: #c9ddfa;
+    color: #0747A6;
+    padding: 10px 8px;
+    height: 30px;
+}
+.done{
+    background: #E3FCEF;
+    color: #006644;
+}
+.not-complete{
+    background: #ef5e5e;
+    color: #f1e1e1;
+}
+
+#createsprintModal p{
+    color: var(--gray-text);
+    position: relative;
+    top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#createsprintModal .error-sprint-duration{
+    color: #842029;
+    position: relative;
+    top: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.deleteSprintModal p{
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1.02px;
+    margin-bottom: 18px;
+    line-height: 28px;
+}
+.deleteSprintModal .btn-close{
+    font-size: 18px;
+}

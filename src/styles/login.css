@@ -1,0 +1,106 @@
+/* Start login + Start Sign-in?do=choose-account-create */
+.login-page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.login-page .description-section{
+    position: absolute;
+    left: 6px;
+    width: 50%;
+    height: inherit;
+    background-color: var(--white-color);
+}
+.login-page .description-section .container{
+    height: inherit; 
+    width: 90%;
+    position: relative;
+}
+.login-page .description-section .container img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.login-page .form-section{
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    height: inherit;
+    background-color: whitesmoke;
+}
+
+.login-page .form-section .container{
+    position: relative;
+    width: 90%;
+    height: 400px;
+    top: 120px;
+}
+.login-page .form-section .container a{
+    text-decoration: none;
+    color: var(--balck-color);
+}
+.login-page .form-section .container h1{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: capitalize;
+    width: fit-content;
+}
+.login-page .form-section .container h1 span{
+    color: var(--main-color);
+}
+
+.login-page .form-section .container form{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.alert-danger{
+    width: 140%;
+    position: relative;
+    margin-left: -68px;
+    visibility: hidden;
+}
+#icon-danger{
+    font-size: 30px;
+    margin: 0px 8px;
+}
+#error-text{
+    margin: 0px 8px;
+    font-size: 18px;
+}
+.login-page .form-section .container form input{
+    width: 359.19px;
+    height: 50px;
+    border: 1px solid var(--gray-text);
+    outline: none;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.login-page .form-section .container form input:hover{
+    border-color: var(--main-color) ;
+}
+.login-page .form-section .container form input:focus{
+    box-shadow: 0 0 8px 0 var(--main-color);
+}
+
+.login-page .form-section .container form button{
+    width: 359.19px;
+    height: 48px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: 0.3s;
+}

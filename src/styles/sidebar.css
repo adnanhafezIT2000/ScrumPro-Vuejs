@@ -1,0 +1,72 @@
+aside{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside .container{
+    height: calc(100vh - 70px);
+    padding: 35px;
+    position: relative;
+}
+aside .container .row{
+    width: 151%;
+    position: relative;
+}
+aside .container .project-name{
+    border-bottom: 1px double var(--gray-color);
+    padding-bottom: 25px;
+    font-style: italic;
+    color: var(--black-color);
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+
+
+aside .container .links{
+    position: relative;
+    top: 7.5px;
+    list-style-type: none;
+    margin-left: -45px;
+    padding: 0;
+}
+aside .container .links a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 146%;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    color: var(--black-color);
+    transition: 0.3s;
+    border-left: 7px solid white;
+    position: relative;
+    padding: 12px 12px 12px 0px;
+    margin-left: 10px;
+}
+aside .container .links a:hover {
+    background: whitesmoke;
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+aside .container .links a i{
+    margin: 0px 23px;
+    font-size: 22px;
+}
+aside .container .links a p{
+    position: absolute;
+    left: 22%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 19px;
+}
+
+aside .container .links .router-link-active ,
+aside .container .links .router-link-exact-active{
+    background: whitesmoke;
+    border-color: var(--main-color);
+    color: var(--main-color);
+}

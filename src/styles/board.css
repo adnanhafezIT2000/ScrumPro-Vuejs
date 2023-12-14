@@ -1,0 +1,99 @@
+#board .container-fluid{
+    margin-top: 30px;
+    padding: 10px;
+    height: auto;
+}
+#board .container-fluid section{
+    background: #e9ecef;
+    padding: 12px;
+    min-height: 450px;
+}
+#board .container-fluid section h6{
+    text-transform: uppercase;
+    color: #5E6C84;
+    letter-spacing: 1.02px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+#board .container-fluid .section-todo .go-to-backlog{
+    width: 100%;
+    position: relative;
+    top: 25px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#board .container-fluid .section-todo .go-to-backlog img{
+    width: 140px;
+    height: 140px;
+}
+#board .container-fluid .section-todo .go-to-backlog p{
+    width: 60%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+#board .container-fluid .section-todo .go-to-backlog a{
+    text-decoration: none;
+    padding: 7px 20px;
+    color: var(--black-color);
+    background: #dee2e6;
+    border-radius: 0.50rem;
+    letter-spacing: 1.02px;
+    font-weight: 500;
+    transition: 0.3s all ease-in-out;
+}
+#board .container-fluid .section-todo .go-to-backlog a:hover{
+    background: #ced4da;
+}
+#board .container-fluid section .story-box{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--gray-color);
+    border-radius: 0.5rem;
+}
+#board .container-fluid section .story-box p{
+    margin-bottom: 10px;
+}
+#board .container-fluid section .story-box .story-info{
+    display: flex;
+    padding-bottom: 5px;
+}
+#board .container-fluid section .story-box .story-info .status{
+    margin-right: 14px;
+    font-size: 20px;
+}
+#board .container-fluid .section-progress .story-box .story-info .status{
+    color: #0d6efd;
+}
+#board .container-fluid .section-done .story-box .story-info .status{
+    color: #198754;
+}
+#board .container-fluid section .story-box .story-info .point{
+    margin-right: 14px;
+    width: 33px;
+    height: 33px;
+    background: var(--gray-color);
+    color: var(--black-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+#board .container-fluid section .story-box .story-info .priority{
+    margin-top: 2.5px;
+    color: var(--black-color);
+    text-transform: capitalize;
+}
+#board .container-fluid section .story-box .story-info .priority .flag-high{
+    color: red;
+}
+#board .container-fluid section .story-box .story-info .priority .flag-meduim{
+    color: orange;
+}
+#board .container-fluid section .story-box .story-info .priority .flag-low{
+    color: gray;
+}

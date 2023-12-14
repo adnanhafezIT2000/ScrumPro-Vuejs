@@ -1,0 +1,60 @@
+#definition-management .container{
+    margin-top: 50px;
+    height: auto;
+    width: 90%;
+}
+#definition-management input:focus , 
+#definition-management select:focus{
+    border-color: var(--main-color);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                        0 0 10px rgba(111, 61, 244, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(111, 61, 244, 0.6);
+}
+#definition-management .container .no-definitions-found{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2.04px;
+    font-size: 45px;
+    color: var(--gray-text);
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 20px;
+}
+#definition-management .container ul{
+    list-style: none;
+    width: 102%;
+    margin-left: -13px;
+}
+#definition-management .container ul li{
+    width: 100%;
+    margin-bottom: 25px;
+    background-color: white;
+    border: 1px solid var(--gray-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 0.25rem;
+    position: relative;
+}
+#definition-management .container ul li p{
+    width: 90%;
+    color: var(--black-color);
+    position: relative;
+    top: 8px;
+    font-size: 17px;
+}
+#definition-management .container ul li .actions{
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+}
+#definition-management .container ul li .actions .fa-edit{
+    position: relative;
+    top: 2px;
+}
+#definition-management .container ul li .actions i{
+    cursor: pointer;
+}

@@ -1,0 +1,176 @@
+#tasks-box .container{
+    position: relative;
+}
+#tasks-box .no-tasks-found{
+    position: absolute;
+    left: 53.5%;
+    width: 100%;
+    transform: translateX(-50%);
+    color: var(--gray-text);
+    letter-spacing: 2.04px;
+    text-transform: capitalize;
+    user-select: none;
+    font-weight: 600;
+    margin-top: 45px;
+    display: flex;
+}
+#tasks-box .no-tasks-found i{
+    font-size: 40px;
+    position: relative;
+    top: 1px;
+    margin-right: 10px;
+}
+
+#tasks-box .task-box{
+    min-height: 170px;
+    margin: 18px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tasks-box .task-box .box{
+    min-height: 200px;
+    width: 100%;
+    background-color: var(--white-color);
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid var(--gray-color);
+}
+#tasks-box .task-box .block-task{
+    background: rgba(0, 0, 0, 0.03);
+}
+#tasks-box .task-box .blocked-lock{
+    position: absolute;
+    left: -12px;
+    top: -12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgba(255, 50, 50 , 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+}
+#tasks-box .task-box .box .title{
+    width: 79%;
+    color: var(--black-color);
+}
+#tasks-box .task-box .box .title .ID{
+    font-size: 18px;
+    font-weight: bolder;
+    font-style: italic;
+}
+#tasks-box .task-box .btn-selected{
+    position: absolute;
+    right: 13px;
+    top: 13px;
+}
+#tasks-box .task-box .btn-selected button{
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+#tasks-box .task-box .manage{
+    margin-top: 12px;
+    display: flex;
+}
+#tasks-box .task-box .manage .level i{
+    color: var(--yellow-color);
+    margin-left: 2px;
+}
+#tasks-box .task-box .manage .level span{
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+#tasks-box .task-box .manage .category-skill{
+    display: flex;
+    margin-left: 20px;
+}
+#tasks-box .task-box .manage .category-skill p{
+    margin-right: 10px;
+    background-color: var(--yellow-color);
+    width: fit-content;
+    height: fit-content;
+    color: var(--white-color);
+    border-radius: 7px;
+    padding: 0px 10px;
+}
+#tasks-box .task-box .manage .status{
+    margin-left: 15px;
+}
+#tasks-box .task-box .manage .status .todo{
+    padding: 0px 10px;
+    border-radius: 7px;
+    width: fit-content;
+    height: fit-content;
+    background: var(--gray-text);
+    color: white;
+}
+#tasks-box .task-box .manage .status .progress{
+    padding: 0px 10px;
+    border-radius: 7px;
+    width: fit-content;
+    height: fit-content;
+    background: #c9ddfa;
+    color: #0747A6;
+}
+#tasks-box .task-box .manage .status .done{
+    padding: 0px 10px;
+    border-radius: 7px;
+    width: fit-content;
+    height: fit-content;
+    background: #E3FCEF; 
+    color: #006644;
+}
+#tasks-box .task-box .task-dependence{
+    position: absolute;
+    right: 13px;
+    bottom: -13px;
+}
+#tasks-box .task-box .task-dependence ul{
+    list-style: none;
+}
+#tasks-box .task-box .task-dependence i{
+    font-size: 17px;
+    letter-spacing: 1.02px;
+}
+#tasks-box .task-box .user-details ul{
+    list-style: none;
+    position: relative;
+    top: 15px;
+    left: -15px;
+}
+#tasks-box .task-box .user-details #ul li{
+    margin: -13px 0px;
+}
+.list-task-id{
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+    left: -20px;
+    top: 2px;
+    display: flex;
+}
+.list-task-id li{
+    margin-right: 5px;
+}
+#tasks-box .task-box .user-details p{
+    font-weight: bold;
+    letter-spacing: 1.02px;
+    text-transform: capitalize;
+}
+#tasks-box .task-box .user-details .level span{
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+#tasks-box .task-box .user-details .level i{
+    color: var(--yellow-color);
+    margin-left: 2px;
+}

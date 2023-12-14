@@ -1,0 +1,108 @@
+/* Update User Modal */
+#createUserModal{
+    overflow:scroll;
+    scroll-behavior: smooth;
+    padding-bottom: 40px;
+}
+#createUserModal .modal-box{
+    width: 1000px;
+    position: relative;
+}
+
+/* Create User Form */
+#createUserModal input:focus , 
+#createUserModal select:focus{
+    border-color: var(--main-color);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                        0 0 10px rgba(111, 61, 244, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(111, 61, 244, 0.6);
+}
+#createUserModal .container{
+    height: auto;
+}
+#createUserModal .container .basic-information , 
+#createUserModal .container .contact-information , 
+#createUserModal .container .work-information{
+    height: auto;
+}
+#createUserModal .container .basic-information h5, 
+#createUserModal .container .contact-information h5 , 
+#createUserModal .container .work-information h5{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--main-color);
+    letter-spacing: 1.02px;
+}
+#createUserModal .container .form-outline{
+    margin-left: 30px;
+    position: relative;
+}
+#createUserModal .container .form-outline .error{
+    position: absolute;
+    right: 0px;
+}
+#createUserModal .container .form-outline{
+    width: 80%;
+}
+#createUserModal .work-information{
+    margin-top: 10px;
+}
+#createUserModal .work-information h5{
+    margin-top: 10px;
+}
+#createUserModal .container .work-information .form-outline{
+    width: 77%;
+}
+#createUserModal .skills{
+    height: auto;
+}
+
+.content-gender-radio{
+    display: flex;
+    position: relative;
+    top: 13px;
+}
+.content-gender-radio label{
+    margin-left: 3px;
+    text-transform: capitalize;
+    font-size: 17px;
+    color: var(--black-color);
+    cursor: pointer;  
+    position: relative;
+    top: -3px;
+    letter-spacing: 1.02px;
+}
+.content-gender-radio input{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.content-gender-radio .content-female{
+    margin-left: 60px;
+}
+
+#createUserModal .box-body .skills{
+    margin-left: 32px;
+    margin-top: 10px;
+}
+#createUserModal .box-body .skills .skill-box{
+    margin-bottom: 20px;
+    margin-right: -26px;
+}
+#createUserModal .box-body .skills input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+#createUserModal .box-body .skills label{
+    margin-left: 8px;
+    text-transform: capitalize;
+    font-size: 17px;
+    color: var(--black-color);
+    cursor: pointer;  
+    position: relative;
+    top: -3px;
+    letter-spacing: 1.02px;
+    cursor: pointer;
+}

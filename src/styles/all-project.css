@@ -1,0 +1,175 @@
+#all-project .btn-refresh{
+    background: #F2C355;
+    border: none;
+    outline: none;
+}
+#all-project .btn-refresh i{
+    font-size: 20px; 
+    color:white;
+}
+#all-project input:focus , 
+#all-project select:focus{
+    border-color: var(--main-color);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                        0 0 10px rgba(111, 61, 244, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(111, 61, 244, 0.6);
+}
+.no-teams-create-project{
+    text-align:center;
+    color: var(--gray-text);
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1.02px;
+    margin-top: 45px;
+    text-transform: capitalize;
+}
+
+#all-project .filter{
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#all-project .filter-icon i{
+    font-size: 36px;
+    color: var(--main-color);
+}
+#all-project .filter input{
+    width: 270px;
+    padding-left: 40px;
+    color: var(--black-color);
+}
+#all-project .filter select{
+   width: 170px;
+}
+#all-project .filter .input-search{
+    position: relative;
+}
+#all-project .filter .input-search i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    font-size: 17px;
+    color: var(--gray-text);
+    font-weight: bolder;
+}
+#all-project .filter .btn{
+    background: var(--main-color);
+    color: white;
+    font-size: 16px;
+    margin-left: -7px;
+}
+
+#all-project .search-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+#all-project .search-date span{
+    font-size: 16px;
+    color: var(--black-color);
+}
+#all-project .search-date input[type="date"] {
+    margin: 0px 6px;
+    padding-left: 15px;
+    display:block;
+    position:relative;
+    font-size:1rem;
+    font-family:monospace;
+    border-radius:0.25rem;
+    background:
+        white
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='22' viewBox='0 0 20 22'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23688EBB' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' transform='translate(1 1)'%3E%3Crect width='18' height='18' y='2' rx='2'/%3E%3Cpath d='M13 0L13 4M5 0L5 4M0 8L18 8'/%3E%3C/g%3E%3C/svg%3E")
+        right 1rem
+        center
+        no-repeat;
+    cursor:pointer;
+}
+#all-project .search-date input[type="date"]:focus {
+    outline:none;
+    border-color:#3acfff;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                                0 0 10px rgba(111, 61, 244, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(111, 61, 244, 0.6);
+}
+  
+#all-project .search-date ::-webkit-datetime-edit-month-field:hover,
+#all-project .search-date ::-webkit-datetime-edit-day-field:hover,
+#all-project .search-date ::-webkit-datetime-edit-year-field:hover {
+    background:rgba(0, 120, 250, 0.1);
+}
+::-webkit-datetime-edit-text {
+    opacity:0;
+}
+::-webkit-clear-button,
+::-webkit-inner-spin-button {
+    display:none;
+}
+::-webkit-calendar-picker-indicator {
+    position:absolute;
+    width:2.5rem;
+    height:100%;
+    top:0;
+    right:0;
+    bottom:0;
+    opacity:0;
+    cursor:pointer;
+    color:rgba(0, 120, 250, 1);
+    background:rgba(0, 120, 250, 1);
+
+}
+input[type="date"]:hover::-webkit-calendar-picker-indicator { opacity:0.05; }
+input[type="date"]:hover::-webkit-calendar-picker-indicator:hover { opacity:0.15; }
+  
+
+#all-project table{
+    background: white;
+    border: 1px solid var(--gray-color);
+    width: 98%;
+    margin: 40px auto auto auto;
+}
+#all-project table thead{
+    border-bottom: 3px solid var(--main-color);
+}
+#all-project table thead tr th{
+    font-size: 18px;
+    letter-spacing: 1.02px;
+    padding: 15px 0px 15px 15px;
+}
+#all-project table tbody tr td{
+    padding-top: 8px;
+    padding-left: 15px;
+}
+.product-owner-status{
+    position: relative;
+    top: 17.5px;
+}
+#all-project table img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 3px;
+}
+#all-project table tbody tr td:nth-child(1) ,
+#all-project table tbody tr td:nth-child(4) ,
+#all-project table tbody tr td:nth-child(5) ,
+#all-project table tbody tr td:nth-child(6) ,
+#all-project table tbody tr td:nth-child(7) ,
+#all-project table tbody tr td:nth-child(8){
+    padding-top: 20px;
+}
+#all-project table tbody tr td:nth-child(8) i{
+    font-size: 20px;
+    margin-top: 3px;
+    cursor: pointer;
+    margin-left: 22px;
+}
+#all-project table tbody tr td:nth-child(5) ,
+#all-project table tbody tr td:nth-child(6) ,
+#all-project table tbody tr td:nth-child(7){
+    padding-top: 22px;
+}
